@@ -1,0 +1,198 @@
+/* Přihlašovací stránka k appce */
+.login-screen {
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
+}
+
+.logo {
+  margin-bottom: -75px !important;
+}
+
+.login-screen input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.login-screen button {
+  background-color: #4076c1 !important;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-screen button:hover {
+  background-color: #0056b3;
+}
+
+/* Responzivita pro menší obrazovky */
+@media (max-width: 600px) {
+  .login-screen {
+    max-width: 90%;
+    padding: 10px;
+  }
+}
+
+/* Container appky */
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Rozdělování uživatele od AI v chatu */
+.ai { float:left; }
+.user { float:right; }
+
+span { color:#3e3e3e; }
+
+/* Posunutí tlačítka doprava */
+.space { margin-right: -3% !important; }
+
+.remove {
+  background-color: #f16c6c !important;
+  margin-right: 1%;
+}
+
+.remove:hover {
+  background-color: #c33f3f !important;
+}
+
+/* Vzhled zprávy */
+.message {
+  width: 50%;
+  margin: 5px;
+  border-radius: 10px;
+  padding: 10px 15px;
+  color: #555555;
+  border: 1px solid #f2f2f2;
+  background: #fbfbfb;
+}
+
+/* Chat layout */
+.chat {
+  margin-top: 25px;
+  height: 50vh;
+  width: 100%;
+  border: 1px solid #e5e5ea;
+  padding: 10px;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+
+.row {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: space-between;
+}
+
+/* Chat formulář */
+.message-form {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0px;
+  text-align: right;
+}
+
+textarea {
+  background: #d5d5d538;
+  border: 1px solid #948e8e1a;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4076c1 !important;
+  padding: 10px 35px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #3260a0 !important;
+  transition: .5s;
+  cursor: pointer;
+}
+
+/* Barva scrollbaru */
+::-webkit-scrollbar {
+  width: 12px;
+  border-radius: 6px;
+}
+
+/* Barva thumbu */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+/* Barva thumbu po najetí myší */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Barva tracku */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 6px;
+}
+
+/* Barva tracku po najetí myši */
+::-webkit-scrollbar-track:hover {
+  background-color: #ddd;
+}
+
+/* Mobilní vzhled */
+@media (max-width: 767px) {
+
+  .container {
+      width: 95%;
+      margin: 0 auto;
+      text-align: center;
+  }
+
+  .message {
+    text-align: left;
+  }
+
+  .chat {
+    padding: 10px 0px;
+  }
+
+  textarea {
+    padding: 10px;
+    width: -webkit-fill-available;
+  }
+
+  .space {
+    margin:0 !important;
+  }
+
+}
+
+@media (max-width: 380px) {
+  .row {
+    flex-direction: column !important;
+    gap:10px;
+  }
+}
